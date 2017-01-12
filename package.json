@@ -1,0 +1,20 @@
+{
+  "name": "modules-iso",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "npm run copySrcToDist && npm run compileSrcToSystem",
+    "copySrcToDist": "rm -r dist-esm ; cp -r src dist-esm",
+    "compileSrcToSystem": "rm -r dist-system ; babel src --out-dir dist-system --plugins transform-es2015-modules-systemjs"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "systemjs": "^0.20.0-rc.1"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.18.0",
+    "babel-plugin-transform-es2015-modules-systemjs": "^6.19.0"
+  }
+}
