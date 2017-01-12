@@ -29,7 +29,7 @@ The file `app.html` uses the following HTML for this bootstrap:
 <script defer src="modules-bootstrap.js" main="dist-system/main.js" systemjs="/path/to/system-production.js"></script>
 ```
 
-When `&lt;script type="module">` is not supported in the browser, we first load the production
+When `<script type="module">` is not supported in the browser, we first load the production
 build of SystemJS (from SystemJS 0.20) that just supports System.register module format loading, to match ES module semantics.
 
 ### Build Process
