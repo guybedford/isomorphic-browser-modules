@@ -1,4 +1,4 @@
-# <script type="module"> Isomorphic modules workflow
+# <script type="module"> Isomorphic browser modules workflow
 
 This project was created as a follow-up to discussions around how to load ES modules
 in modern browsers, while providing a fallback for older browsers that only
