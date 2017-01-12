@@ -10,12 +10,6 @@ as a module and second as a script.
 Custom attributes on the scripts can then be used to point to the correct actual
 main entry points to be loaded once we know which loading mechanism to use.
 
-_I call this approach an isomorphic modules workflow because by using System.register, we ensure module
-semantics are fully replicated between ES module environments and older browsers.
-In Mathematics, two spaces are considered isomorphic when they have exactly the same structure,
-which is effectly what we're maintaining by matching semantics. It is also partially a joke -
-that the frontend community has used the term incorrectly for so long (server and browser are always semantically different, and code that runs between the two will have different behaviours between the two, which is the opposite of isomorphic), so it's nice to have an excuse to use it in the right context._
-
 ### Demo
 
 Clone the repo and open `app.html` here when running a web server.
@@ -50,3 +44,10 @@ with the following Babel code:
 ```
 
 SystemJS 0.20 can be installed currently via `npm install systemjs@next`.
+
+
+_I call this approach an isomorphic modules workflow because by using System.register, we ensure module
+semantics are fully replicated between ES module environments and older browsers.
+In Mathematics, two spaces are considered isomorphic when they have exactly the same structure,
+which is effectly what we're maintaining by matching semantics. It is also partially a joke -
+that the frontend community has used the term incorrectly for so long (server and browser are always semantically different, and code that runs between the two will have different behaviours between the two, which is the opposite of isomorphic), so it's nice to have an excuse to use it in the right context._
