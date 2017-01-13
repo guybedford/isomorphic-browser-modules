@@ -14,7 +14,7 @@ main entry points to be loaded once we know which loading mechanism to use.
 
 Clone the repo and open `app.html` here when running a web server.
 
-In the latest Safari Technology Previous release with ES modules support, it will use
+In the latest Safari Technology Preview release with ES modules support, it will use
 the ES modules code, while in older browsers it will fallback to SystemJS production and
 System.register module format loading.
 
